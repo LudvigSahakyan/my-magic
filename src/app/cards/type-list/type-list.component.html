@@ -1,0 +1,10 @@
+<mat-nav-list>
+
+  <h1 mat-subheader> Types </h1>
+  <mat-divider></mat-divider>
+  <a (click)="onClickType(value)" [routerLink]="['/cards', value]" [routerLinkActive]="'my-class-active'" mat-list-item
+    *ngFor='let value of types'>
+    {{ value }}
+  </a>
+
+</mat-nav-list>
